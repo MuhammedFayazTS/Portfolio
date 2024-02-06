@@ -1,0 +1,22 @@
+@import "../../../App.scss";
+
+p {
+  font-size: 2rem;
+  display: flex;
+  column-gap: 1rem;
+  flex-wrap: wrap;
+  font-weight: 500;
+  text-align: start;
+  @include mobile {
+    font-size: 1.5rem;
+    column-gap: .5rem;
+    display: none;
+  }
+  .word {
+    position: relative;
+  }
+  .shadow {
+    opacity: 0.1;
+    position: absolute;
+  }
+}
